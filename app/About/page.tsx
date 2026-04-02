@@ -20,16 +20,16 @@ export default function AboutPage() {
                 <div className="bg-black  w-[180] rounded-xl z-10 absolute mt-80 md:mt-105 md:ml-20 ml-15  ">
                     <ul className="flex flex-row gap-4 items-center justify-center py-6 px-2">
                         <li>
-                           <Link href=""><FaLinkedin className="text-green-600 hover:text-green-400 transition-colors"/></Link> 
+                           <Link href="https://www.linkedin.com/in/okesola-francis"><FaLinkedin className="text-green-600 hover:text-green-400 transition-colors"/></Link> 
                         </li>
                         <li>
-                            <Link href=""><FaGithub className="text-green-600 hover:text-green-400 transition-colors"/></Link>
+                            <Link href="https://github.com/francisokesola"><FaGithub className="text-green-600 hover:text-green-400 transition-colors"/></Link>
                         </li>
                         <li>
-                            <Link href=""><FaEnvelopeOpen className="text-green-600 hover:text-green-400 transition-colors"/></Link>
+                            <Link href="francisokesola@gmail.com"><FaEnvelopeOpen className="text-green-600 hover:text-green-400 transition-colors"/></Link>
                         </li>
                         <li>
-                            <Link href=""><FaWhatsapp className="text-green-600 hover:text-green-400 transition-colors"/></Link>
+                            <Link href="wa.me/2348167797350"><FaWhatsapp className="text-green-600 hover:text-green-400 transition-colors"/></Link>
                         </li>
                     </ul>
                 </div>
