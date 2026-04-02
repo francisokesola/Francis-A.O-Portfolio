@@ -9,7 +9,7 @@ export default function Portfolio (){
             <h1 className="md:text-5xl md:font-bold font-semibold text-2xl text-center my-5">My Portfolio</h1>
             <p className="text-center md:text-center mb-5 ">These are some of the Projects I have <br /> featured in.</p>
         <div className="grid md:grid-cols-3 grid-cols-1 md:px-20 gap-4 items-center ">
-            <div className=" w-[300] h-[280] md:h-[400] rounded-lg bg-white  ">
+            <div className=" w-[300] h-[300] md:h-[400] rounded-lg bg-white  ">
                  <Image 
                                 src="/image.png"
                                 alt="Desert-delights"
@@ -28,7 +28,7 @@ export default function Portfolio (){
                     </button>
                  </div>
             </div>
-            <div className=" md:h-[400] w-[300] h-[280]  rounded-lg bg-white ">
+            <div className=" md:h-[400] w-[300] h-[320]  rounded-lg bg-white ">
                  <Image 
                                 src="/cwatches.png"
                                 alt="Classic-watches"
@@ -40,13 +40,13 @@ export default function Portfolio (){
                  <div className="text-black px-2 py-2 text-center">
                     <p className="text-gray-500 text-sm">E-commerce website</p>
                     <h2 className="font-bold text-xl">Classic Watches Store</h2>
-                    <p>A website for a classic watches store integrated with a payment system using Stripe, carts and checkout features</p>
+                    <p>A website for a Classic Watch store integrated with a payment system using Stripe, carts and checkout features</p>
                     <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2">
                         <Link href="https://classic-watches.vercel.app/" className="flex flex-row items-center gap-3" >View <FaArrowCircleDown className="text-white"/></Link>
                     </button>
                  </div>
             </div>
-            <div className=" md:h-[400] w-[300] h-[280] rounded-lg bg-white  ">
+            <div className=" md:h-[400] w-[300] h-[300] rounded-lg bg-white  ">
                  <Image 
                                 src="/dazzle.png"
                                 alt="dazzle-fashion"
@@ -64,7 +64,7 @@ export default function Portfolio (){
                     </button>
                  </div>
             </div>
-            <div className="md: md:h-[400] w-[300] h-[280]  rounded-lg bg-white ">
+            <div className="md: md:h-[400] w-[300] h-[300]  rounded-lg bg-white ">
                  <Image 
                                 src="/Trendlama.png"
                                 alt="Trendlama"
@@ -76,7 +76,7 @@ export default function Portfolio (){
                  <div className="text-black px-2 py-2 text-center">
                     <p className="text-gray-500 text-sm">E-commerce website</p>
                     <h2 className="font-bold text-xl">Trendlama Store</h2>
-                    <p>A responsive fashion store ecommerce website built for easy understandig by users and premium functionality</p>
+                    <p>A responsive fashion store e-commerce website built for easy understandig by users and premium functionality</p>
                     <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2">
                         <Link href="https://commerce-nu-fawn.vercel.app/" className="flex flex-row items-center gap-3">View <FaArrowCircleDown className="text-white"/></Link>
                     </button>

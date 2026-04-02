@@ -5,7 +5,7 @@ export default function Footer() {
         <section>
             <div className="bg-green-800 h-[200] block md:flex md:flex-row items-center justify-between px-10 py-3 ">
                  <div className="flex flex-row gap-2 items-center text-center md:text-left ">
-                    <h1 className="text-white text-3xl font-bold bg-green-600 rounded-4xl px-1 py-2 ml-7 md:ml-0">FO</h1>
+                    <h1 className="text-white text-3xl font-bold bg-green-600 rounded-4xl px-1 py-2 ml-10 md:ml-0">FO</h1>
                     <h1 className="p-2 font-bold text-white text-2xl italic ">Francis A.O</h1>
                 </div>
 
