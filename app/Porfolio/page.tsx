@@ -4,9 +4,12 @@ import { FaArrowCircleDown } from "react-icons/fa"
 
 export default function Portfolio (){
     return (
-        <section id="portfolio">
-        <div className="grid md:grid-cols-3 grid-cols-1 md:px-20 px-10 gap-4 border-t-amber-50 border-t-2 py-5">
-            <div className=" w-[300] h-[280] md:h-[400] rounded-lg bg-white ">
+        <section id="portfolio" className="px-10  border-t-amber-50 border-t-2 py-5">
+
+            <h1 className="md:text-5xl md:font-bold font-semibold text-2xl text-center my-5">My Portfolio</h1>
+            <p className="text-center md:text-center mb-5 ">These are some of the Projects I have <br /> featured in.</p>
+        <div className="grid md:grid-cols-3 grid-cols-1 md:px-20 gap-4 ">
+            <div className=" w-[300] h-[280] md:h-[400] rounded-lg bg-white  ">
                  <Image 
                                 src="/image.png"
                                 alt="Desert-delights"
