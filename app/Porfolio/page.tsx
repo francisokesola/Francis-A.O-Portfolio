@@ -8,10 +8,11 @@ export default function Portfolio (){
         <div className="grid md:grid-cols-3 grid-cols-1 md:px-20 px-10 gap-4 border-t-amber-50 border-t-2 py-5">
             <div className=" w-[300] h-[280] md:h-[400] rounded-lg bg-white ">
                  <Image 
-                                src="/Image.png"
+                                src="/image.png"
                                 alt="Desert-delights"
                                 width= {350}
                                 height={300}
+                                loading="eager"
                                 className="rounded-xl md:w-75 w-75 h-25 md:h-37.5 "
                                 />
 
