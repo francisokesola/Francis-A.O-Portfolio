@@ -26,7 +26,7 @@ export default function AboutPage() {
                             <Link href="https://github.com/francisokesola"><FaGithub className="text-green-600 hover:text-green-400 transition-colors"/></Link>
                         </li>
                         <li>
-                            <Link href="francisokesola@gmail.com"><FaEnvelopeOpen className="text-green-600 hover:text-green-400 transition-colors"/></Link>
+                            <Link href="mailto:francisokesola@gmail.com"><FaEnvelopeOpen className="text-green-600 hover:text-green-400 transition-colors"/></Link>
                         </li>
                         <li>
                             <Link href="wa.me/2348167797350"><FaWhatsapp className="text-green-600 hover:text-green-400 transition-colors"/></Link>
