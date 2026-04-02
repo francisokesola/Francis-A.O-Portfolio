@@ -8,7 +8,7 @@ export default function Portfolio (){
 
             <h1 className="md:text-5xl md:font-bold font-semibold text-2xl text-center my-5">My Portfolio</h1>
             <p className="text-center md:text-center mb-5 ">These are some of the Projects I have <br /> featured in.</p>
-        <div className="grid md:grid-cols-3 grid-cols-1 md:px-20 gap-4 items-center ">
+        <div className="grid md:grid-cols-3 grid-cols-1 pl-5 md:pl-0 md:px-20 gap-4 items-center ">
             <div className=" w-[300] h-[300] md:h-[400] rounded-lg bg-white  ">
                  <Image 
                                 src="/image.png"
