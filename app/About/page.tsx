@@ -10,9 +10,10 @@ export default function AboutPage() {
             <div className="">
                 <Image 
                     alt="Image"
-                    src="/image.jpeg" 
+                    src="/Image.jpeg" 
                     width={350}
                     height={450}
+                    loading="eager"
                     className="rounded-2xl z-0 absolute w-75 h-87.5 md:w-87.5 md:h-112.5"
                     />
 
