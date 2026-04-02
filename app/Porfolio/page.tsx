@@ -8,7 +8,7 @@ export default function Portfolio (){
 
             <h1 className="md:text-5xl md:font-bold font-semibold text-2xl text-center my-5">My Portfolio</h1>
             <p className="text-center md:text-center mb-5 ">These are some of the Projects I have <br /> featured in.</p>
-        <div className="grid md:grid-cols-3 grid-cols-1 md:px-20 gap-4 ">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:px-20 gap-4 items-center ">
             <div className=" w-[300] h-[280] md:h-[400] rounded-lg bg-white  ">
                  <Image 
                                 src="/image.png"
@@ -57,7 +57,7 @@ export default function Portfolio (){
 
                  <div className="text-black px-2 py-2 text-center">
                     <p className="text-gray-500 text-sm">A landing-page website</p>
-                    <h2 className="font-bold text-xl">Desert Delights Shop</h2>
+                    <h2 className="font-bold text-xl">Dazzle Fashion Hub</h2>
                     <p>A nealy designed website for a fashion brand that allows easy understanding and easy acces to the fashion brand</p>
                     <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2">
                         <Link href="https://dazzlefashion.netlify.app/" className="flex flex-row items-center gap-3">View <FaArrowCircleDown className="text-white"/></Link>
