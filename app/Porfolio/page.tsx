@@ -58,7 +58,7 @@ export default function Portfolio (){
                  <div className="text-black px-2 py-2 text-center">
                     <p className="text-gray-500 text-sm">A landing-page website</p>
                     <h2 className="font-bold text-xl">Dazzle Fashion Hub</h2>
-                    <p>A nealy designed website for a fashion brand that allows easy understanding and easy acces to the fashion brand</p>
+                    <p>A well designed website for a fashion brand that allows easy understanding and easy acces to the fashion brand</p>
                     <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2">
                         <Link href="https://dazzlefashion.netlify.app/" className="flex flex-row items-center gap-3">View <FaArrowCircleDown className="text-white"/></Link>
                     </button>
