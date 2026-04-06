@@ -44,7 +44,7 @@ export default function AboutPage() {
                 
                 <div className=" flex flex-row gap-3 mt-3 justify-center md:justify-start">
                     <button className="bg-white rounded-lg text-black md:text-xl text-sm py-2 px-3 border-2 hover:scale-110"><Link href="">My Projects</Link></button>
-                    <a href="/Okesola-Francis_Resume.pdf" download="Francis-Okesola-Cv">
+                    <a href="/Okesola_Francis_Ayomide-CV.pdf" download="Francis-Okesola-Cv">
                         <button className="bg-green-400 text-white py-2 px-3 rounded-lg hover:scale-110 md:text-xl text-sm hover:bg-green-300">Download Cv</button>
                     </a>
                 </div>

@@ -61,7 +61,7 @@ export default function Contact(){
                 <div className="md:mx-20 mx-10 my-10 flex flex-col-reverse md:flex md:flex-row items-center md:justify-between">
                     <div className="">
                         <h2 className="font-bold text-2xl mb-3 text-center md:text-left">Let&apos;s discuss your idea</h2>
-                        <p className="text-center md:text-left">I&apos;m available for freelance work. Drop me a line if <br /> you have a project you think I&apos;d be a good fit for.</p>
+                        <p className="text-center md:text-left">I&apos;m available for freelance work. Drop me a line if <br className="hidden md:block" /> you have a project you think I&apos;d be a good fit for.</p>
 
                         <div className="">
                             <div className="flex flex-row items-center  gap-7 my-10">
