@@ -1,3 +1,4 @@
+import { Link } from "lucide-react"
 import Image from "next/image"
 
 export default function HeroPage() {
@@ -25,7 +26,7 @@ export default function HeroPage() {
                 </p>
                 <div className="flex justify-center md:justify-start">
                   <button className="bg-green-800 text-white py-2 px-4 hover:bg-green-600 border-0 rounded-lg mt-2 cursor-pointer">
-                    Contact Us
+                    <Link href="#contact">Get In Touch</Link>
                   </button>
                 </div>
             </div>
