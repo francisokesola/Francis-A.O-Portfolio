@@ -20,7 +20,7 @@ export default function HeroPage() {
                             Hi, I am <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">Francis A.O</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg leading-relaxed">
-                            A frontend developer based in Nigeria building responsive,
+                            A frontend-focused fullstack developer based in Nigeria building responsive,
                             high-performance web applications. I care about smooth interactions,
                             maintainable code, and interfaces that just work.
                         </p>

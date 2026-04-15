@@ -60,7 +60,7 @@ export default function AboutPage() {
 
                         <div className="text-gray-600 dark:text-gray-300 space-y-4 text-base md:text-lg leading-relaxed mb-8">
                             <p>
-                                I&apos;m a frontend developer who helps bring ideas to life by building fast, modern, and user-friendly websites using React, Next.js, TypeScript, and Tailwind CSS. I focus on creating clean designs and smooth experiences that not only look great but also work reliably across devices.
+                                I&apos;m a frontend-focused fullstack developer who helps bring ideas to life by building fast, modern, and user-friendly websites using React, Next.js, TypeScript, and Tailwind CSS. I focus on creating clean designs and smooth experiences that not only look great but also work reliably across devices.
                             </p>
                             <p className="hidden md:block">
                                 I&apos;ve worked on projects like ecommerce platforms, authentication systems, blogs, and landing pages, giving me a strong understanding of what it takes to build real, functional products from start to finish.
