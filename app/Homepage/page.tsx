@@ -17,7 +17,7 @@ export default function HeroPage() {
                             Available for new opportunities
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6 tracking-tight">
-                            Hi, I am <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">Francis A.O</span>
+                            Hi, I am <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">Francis A. Okesola</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg leading-relaxed">
                             A frontend-focused fullstack developer based in Nigeria building responsive,
