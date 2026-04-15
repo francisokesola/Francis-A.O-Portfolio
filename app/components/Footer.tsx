@@ -1,40 +1,36 @@
 "use client"
 import Link from "next/link"
+
 export default function Footer() {
     return(
-        <section>
-            <div className="bg-green-800 h-[200] block md:flex md:flex-row items-center justify-between px-10 py-3 ">
-                 <div className="flex flex-row gap-2 items-center text-center md:text-left ">
-                    <h1 className="text-white text-3xl font-bold bg-green-600 rounded-4xl px-1 py-2 ml-10 md:ml-0">FO</h1>
-                    <h1 className="p-2 font-bold text-white text-2xl italic ">Francis A.O</h1>
+        <footer className="bg-white dark:bg-[#020617] border-t border-gray-200 dark:border-white/10">
+            <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+                 <div className="flex flex-row gap-3 items-center">
+                    <div className="text-white text-xl font-bold bg-blue-600 rounded-xl px-2 py-1 shadow-md shadow-blue-500/20 flex items-center justify-center">FO</div>
+                    <span className="font-bold text-gray-900 dark:text-white text-xl tracking-tight">Francis A.O</span>
                 </div>
 
-                <div className="justify-center ">
-                    <div className="md:flex md:flex-row md:gap-4 items-center "> 
-                    <ul className="md:flex md:flex-row block gap-4 items-center text-center  ">
-                        <li className="  font-medium  hover:text-green-400">
-                            <Link href="#home">Home</Link>
+                <div className="flex flex-col md:flex-row items-center gap-6"> 
+                    <ul className="flex flex-wrap justify-center gap-6">
+                        <li>
+                            <Link href="#home" className="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</Link>
                         </li>
-                        <li className="  font-medium hover:text-green-400 "> 
-                            <Link href="#about">About Us</Link> </li>
-                        <li className=" font-medium hover:text-green-400  ">
-                            <Link href="#portfolio">Portfolio</Link>
+                        <li> 
+                            <Link href="#about" className="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</Link> 
                         </li>
-                        
+                        <li>
+                            <Link href="#portfolio" className="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Portfolio</Link>
+                        </li>
                     </ul> 
-                     <button className=" text-white bg-green-600 hover:bg-green-400  rounded-lg py-2 px-3 md:block hidden ">
+                    <button className="text-sm font-medium text-blue-600 dark:text-blue-400 border border-blue-600 dark:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-full py-2 px-6 transition-all hidden md:block">
                         <Link href="#contact">Contact Us</Link>
                     </button>
-                    
-                    </div>
                 </div>
 
-                <div>
-                    <p className="text-gray-400 text-sm text-center">
-                     © {new Date().getFullYear()} Francis A.O All rights reserved.
-                    </p>
+                <div className="text-gray-400 text-sm">
+                    © {new Date().getFullYear()} Francis A.O. All rights reserved.
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }

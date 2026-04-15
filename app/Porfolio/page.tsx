@@ -1,106 +1,99 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FaArrowCircleDown } from "react-icons/fa"
+import { FaExternalLinkAlt } from "react-icons/fa"
 
-export default function Portfolio (){
+const projects = [
+  {
+    id: 1,
+    category: "E-commerce website",
+    title: "Desert Delights Shop",
+    description: "A landing page built for a dessert store, optimized for responsiveness and clean design.",
+    image: "/image.png",
+    link: "https://delightdeserts.netlify.app/"
+  },
+  {
+    id: 2,
+    category: "E-commerce website",
+    title: "Classic Watches Store",
+    description: "A website for a Classic Watch store integrated with a payment system using Stripe, carts and checkout features.",
+    image: "/cwatches.png",
+    link: "https://classic-watches.vercel.app/"
+  },
+  {
+    id: 3,
+    category: "Landing Page",
+    title: "Dazzle Fashion Hub",
+    description: "A well designed website for a fashion brand that allows easy understanding and easy access to the fashion brand.",
+    image: "/dazzle.png",
+    link: "https://dazzlefashion.netlify.app/"
+  },
+  {
+    id: 4,
+    category: "E-commerce website",
+    title: "Trendlama Store",
+    description: "A responsive fashion store e-commerce website built for easy understanding by users and premium functionality.",
+    image: "/Trendlama.png",
+    link: "https://commerce-nu-fawn.vercel.app/"
+  },
+  {
+    id: 5,
+    category: "Authentication Web App",
+    title: "MarsTech Auth Demo",
+    description: "An authentication website built using a serverless postgres database and Better-Auth for authentication with social links as well as saving users details.",
+    image: "/auth.png",
+    link: "https://authentication-with-neon-serverless.vercel.app/"
+  }
+];
+
+export default function Portfolio() {
     return (
-        <section id="portfolio" className="px-10  border-t-amber-50 border-t-2 py-5">
+        <section id="portfolio" className="py-20 md:py-32 bg-white dark:bg-[#020617] border-t border-gray-100 dark:border-white/5 transition-colors duration-300">
+            <div className="container mx-auto px-6 max-w-7xl">
+                <div className="text-center mb-16">
+                    <div className="inline-block px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-medium text-sm mb-4 border border-blue-100 dark:border-blue-800">
+                        Portfolio
+                    </div>
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                        Featured Projects
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+                        Here are some of the selected projects that showcase my passion for front-end development and creating intuitive user experiences.
+                    </p>
+                </div>
 
-            <h1 className="md:text-5xl md:font-bold font-semibold text-2xl text-center my-5">My Portfolio</h1>
-            <p className="text-center md:text-center mb-5 ">These are some of the Projects I have <br /> featured in.</p>
-        <div className="grid md:grid-cols-3 grid-cols-1 pl-5 md:pl-0 md:px-20 gap-4 items-center ">
-            <div className=" w-[300] h-[300] md:h-[400] rounded-lg bg-white  ">
-                 <Image 
-                                src="/image.png"
-                                alt="Desert-delights"
-                                width= {350}
-                                height={300}
-                                loading="eager"
-                                className="rounded-xl md:w-75 w-75 h-25 md:h-37.5 "
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {projects.map((project) => (
+                        <div key={project.id} className="group bg-gray-50 dark:bg-[#0f172a] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 flex flex-col h-full">
+                            <div className="relative aspect-[4/3] w-full overflow-hidden bg-gray-200 dark:bg-gray-800">
+                                <Image 
+                                    src={project.image}
+                                    alt={project.title}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
+                            </div>
 
-                 <div className="text-black px-2 py-2 text-center">
-                    <p className="text-gray-500 text-sm">E-commerce website</p>
-                    <h2 className="font-bold text-xl">Desert Delights Shop</h2>
-                    <p>A landing page built for a desert store, optimized for responsiveness and clean design</p>
-                    <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2 ">
-                        <Link href="https://delightdeserts.netlify.app/" className="flex flex-row items-center gap-3">View <FaArrowCircleDown className="text-white"/></Link>
-                    </button>
-                 </div>
+                            <div className="p-6 flex flex-col flex-grow">
+                                <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">{project.category}</p>
+                                <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-3">{project.title}</h3>
+                                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 flex-grow">{project.description}</p>
+                                
+                                <div className="mt-auto">
+                                    <Link 
+                                        href={project.link} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 text-sm font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                                    >
+                                        View Project <FaExternalLinkAlt className="text-xs" />
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div className=" md:h-[400] w-[300] h-[320]  rounded-lg bg-white ">
-                 <Image 
-                                src="/cwatches.png"
-                                alt="Classic-watches"
-                                width= {350}
-                                height={300}
-                                className="rounded-xl  md:w-75 w-75 h-25 md:h-37.5 "
-                                />
-
-                 <div className="text-black px-2 py-2 text-center">
-                    <p className="text-gray-500 text-sm">E-commerce website</p>
-                    <h2 className="font-bold text-xl">Classic Watches Store</h2>
-                    <p>A website for a Classic Watch store integrated with a payment system using Stripe, carts and checkout features</p>
-                    <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2">
-                        <Link href="https://classic-watches.vercel.app/" className="flex flex-row items-center gap-3" >View <FaArrowCircleDown className="text-white"/></Link>
-                    </button>
-                 </div>
-            </div>
-            <div className=" md:h-[400] w-[300] h-[300] rounded-lg bg-white  ">
-                 <Image 
-                                src="/dazzle.png"
-                                alt="dazzle-fashion"
-                                width= {350}
-                                height={300}
-                                className="rounded-xl  md:w-75 w-75 h-25 md:h-37.5 "
-                                />
-
-                 <div className="text-black px-2 py-2 text-center">
-                    <p className="text-gray-500 text-sm">A landing-page website</p>
-                    <h2 className="font-bold text-xl">Dazzle Fashion Hub</h2>
-                    <p>A well designed website for a fashion brand that allows easy understanding and easy acces to the fashion brand</p>
-                    <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2">
-                        <Link href="https://dazzlefashion.netlify.app/" className="flex flex-row items-center gap-3">View <FaArrowCircleDown className="text-white"/></Link>
-                    </button>
-                 </div>
-            </div>
-            <div className="md: md:h-[400] w-[300] h-[300]  rounded-lg bg-white ">
-                 <Image 
-                                src="/Trendlama.png"
-                                alt="Trendlama"
-                                width= {350}
-                                height={300}
-                                className="rounded-xl  md:w-75 w-75 h-25 md:h-37.5 "
-                                />
-
-                 <div className="text-black px-2 py-2 text-center">
-                    <p className="text-gray-500 text-sm">E-commerce website</p>
-                    <h2 className="font-bold text-xl">Trendlama Store</h2>
-                    <p>A responsive fashion store e-commerce website built for easy understandig by users and premium functionality</p>
-                    <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2">
-                        <Link href="https://commerce-nu-fawn.vercel.app/" className="flex flex-row items-center gap-3">View <FaArrowCircleDown className="text-white"/></Link>
-                    </button>
-                 </div>
-            </div>
-            <div className=" md:h-[400] w-[300] h-[350]  rounded-lg bg-white ">
-                 <Image 
-                                src="/auth.png"
-                                alt="Authentication"
-                                width= {350}
-                                height={300}
-                                className="rounded-xl  md:w-75 w-75 h-25 md:h-37.5 "
-                                />
-
-                 <div className="text-black px-2 py-2 text-center">
-                    <p className="text-gray-500 text-sm">Authentication website</p>
-                    <h2 className="font-bold text-xl">MarsTech Auth Demo</h2>
-                    <p>An authentication website build using a serverless postgres database and Better-Auth for authentication with social links as well as saving users details in database for easy sign in</p>
-                    <button className="bg-green-500 py-2 px-3 border-0 rounded-lg mt-2">
-                        <Link href="https://authentication-with-neon-serverless.vercel.app/" className="flex flex-row items-center gap-3">View <FaArrowCircleDown className="text-white"/></Link>
-                    </button>
-                 </div>
-            </div>
-        </div>
         </section>
     )
 }

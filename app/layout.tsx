@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Francis Okesola's Portfolio",
-  description: "Built with Next.js",
+  description: "A professional portfolio showcasing my front-end development projects.",
 };
 
 export default function RootLayout({
@@ -30,13 +30,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
-      <div>
+      <body className="min-h-full flex flex-col bg-white dark:bg-[#020617] text-gray-900 dark:text-white" suppressHydrationWarning>
         <Navbar/>
-        <div className="">{children}</div>
+        <main className="flex-grow flex flex-col">{children}</main>
         <Footer/>
-      </div>
-
       </body>
     </html>
   );
