@@ -3,46 +3,55 @@ import Link from "next/link"
 import { FaExternalLinkAlt } from "react-icons/fa"
 
 const projects = [
-  {
-    id: 1,
-    category: "E-commerce website",
-    title: "Desert Delights Shop",
-    description: "A landing page built for a dessert store, optimized for responsiveness and clean design.",
-    image: "/image.png",
-    link: "https://delightdeserts.netlify.app/"
-  },
-  {
-    id: 2,
-    category: "E-commerce website",
-    title: "Classic Watches Store",
-    description: "A website for a Classic Watch store integrated with a payment system using Stripe, carts and checkout features.",
-    image: "/cwatches.png",
-    link: "https://classic-watches.vercel.app/"
-  },
-  {
-    id: 3,
-    category: "Landing Page",
-    title: "Dazzle Fashion Hub",
-    description: "A well designed website for a fashion brand that allows easy understanding and easy access to the fashion brand.",
-    image: "/dazzle.png",
-    link: "https://dazzlefashion.netlify.app/"
-  },
-  {
-    id: 4,
-    category: "E-commerce website",
-    title: "Trendlama Store",
-    description: "A responsive fashion store e-commerce website built for easy understanding by users and premium functionality.",
-    image: "/Trendlama.png",
-    link: "https://commerce-nu-fawn.vercel.app/"
-  },
-  {
-    id: 5,
-    category: "Authentication Web App",
-    title: "MarsTech Auth Demo",
-    description: "An authentication website built using a serverless postgres database and Better-Auth for authentication with social links as well as saving users details.",
-    image: "/auth.png",
-    link: "https://authentication-with-neon-serverless.vercel.app/"
-  }
+    {
+        id: 1,
+        category: "E-commerce website",
+        title: "Desert Delights Shop",
+        description: "A landing page built for a dessert store, optimized for responsiveness and clean design.",
+        image: "/image.png",
+        link: "https://delightdeserts.netlify.app/"
+    },
+    {
+        id: 2,
+        category: "E-commerce website",
+        title: "Classic Watches Store",
+        description: "A website for a Classic Watch store integrated with a payment system using Stripe, carts and checkout features.",
+        image: "/cwatches.png",
+        link: "https://classic-watches.vercel.app/"
+    },
+    {
+        id: 3,
+        category: "Landing Page",
+        title: "DazzlePro Fashion Hub",
+        description: "A well designed website for a fashion brand that allows easy understanding and easy access to the fashion brand.",
+        image: "/dazzlepro.png",
+        link: "https://dazzle-pro-luxury-and-fashion-items.vercel.app/"
+    },
+    {
+        id: 4,
+        category: "E-commerce website",
+        title: "Trendlama Store",
+        description: "A responsive fashion store e-commerce website built for easy understanding by users and premium functionality.",
+        image: "/Trendlama.png",
+        link: "https://commerce-nu-fawn.vercel.app/"
+    },
+    {
+        id: 5,
+        category: "Authentication Web App",
+        title: "MarsTech Auth Demo",
+        description: "An authentication website built using a serverless postgres database and Better-Auth for authentication with social links as well as saving users details.",
+        image: "/auth.png",
+        link: "https://authentication-with-neon-serverless.vercel.app/"
+    },
+    {
+        id: 6,
+        category: "E-commerce website",
+        title: "Rings and Styles Jewellery Store",
+        description: "A responsive fashion store e-commerce website built for easy understanding by users and premium functionality. It is equipped with a payment system using Stripe, Authentication with Better Auth carts and checkout features.",
+        image: "/ringsjs.png",
+        link: "https://rings-and-styles-js.vercel.app/"
+    },
+
 ];
 
 export default function Portfolio() {
@@ -65,7 +74,7 @@ export default function Portfolio() {
                     {projects.map((project) => (
                         <div key={project.id} className="group bg-gray-50 dark:bg-[#0f172a] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 flex flex-col h-full">
                             <div className="relative aspect-[4/3] w-full overflow-hidden bg-gray-200 dark:bg-gray-800">
-                                <Image 
+                                <Image
                                     src={project.image}
                                     alt={project.title}
                                     fill
@@ -78,11 +87,11 @@ export default function Portfolio() {
                                 <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">{project.category}</p>
                                 <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-3">{project.title}</h3>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 flex-grow">{project.description}</p>
-                                
+
                                 <div className="mt-auto">
-                                    <Link 
-                                        href={project.link} 
-                                        target="_blank" 
+                                    <Link
+                                        href={project.link}
+                                        target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center gap-2 text-sm font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                                     >
